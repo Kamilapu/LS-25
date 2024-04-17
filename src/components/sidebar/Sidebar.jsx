@@ -28,12 +28,12 @@ export const Sidebar = () => {
         </svg></Link>
       </div>
 
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/bag' element={<Bag />} />
         <Route path='/heart' element={<Heart />} />
         <Route path='/notification' element={<Notification />} />
-      </Routes>
+      </Routes> */}
 
     </>
   )

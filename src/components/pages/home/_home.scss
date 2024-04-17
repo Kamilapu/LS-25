@@ -1,0 +1,25 @@
+.home {
+  &__title {
+    color: #fff;
+    font-size: 28rem;
+    font-weight: 600;
+    line-height: 36rem;
+  }
+
+  &__input {
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 19rem;
+  }
+
+  &__menu-link {
+    color: #52555a;
+    font-size: 14rem;
+    font-weight: 600;
+    line-height: 20rem;
+  }
+
+  
