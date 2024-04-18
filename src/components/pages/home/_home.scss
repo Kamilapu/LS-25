@@ -6,7 +6,30 @@
     line-height: 36rem;
   }
 
+  &__field-search {
+    display: block;
+    position: relative;
+  }
+
   &__input {
+    border-radius: 15rem;
+    background: #141921;
+
+    padding: 13rem 10rem 12rem 57rem;
+
+        &::placeholder {
+      color: #52555a;
+      font-size: 10rem;
+      font-weight: 500;
+      line-height: 20rem;
+    }
+  }
+
+  &__input-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18rem;
   }
 
   &__menu {
@@ -21,5 +44,88 @@
     font-weight: 600;
     line-height: 20rem;
   }
+}
 
-  
+.coffee {
+  color: #fff;
+  display: flex;
+  gap: 22rem;
+
+  &__card {
+    border-radius: 23rem;
+    background: linear-gradient(159deg, #252a32 4%, rgba(38, 43, 51, 0) 91.93%);
+    padding: 12rem 12rem 22rem 12rem;
+  }
+
+  &__card-title {
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 20rem;
+  }
+
+  &__card-description {
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: 20rem;
+  }
+
+  &__card-price {
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 20rem;
+  }
+
+  &__card-price-dollar {
+    color: #d17842;
+  }
+
+  &__card-price-count {
+    display: flex;
+    gap: 39rem;
+    margin-inline: center;
+  }
+}
+
+.beans {
+  color: #fff;
+  display: flex;
+  gap: 22rem;
+
+  &__card {
+    border-radius: 23rem;
+    background: linear-gradient(159deg, #252a32 4%, rgba(38, 43, 51, 0) 91.93%);
+    padding: 12rem 12rem 22rem 12rem;
+  }
+
+  &__card-photo {
+    border-radius: 16rem;
+  }
+
+  &__card-title {
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 20rem;
+  }
+
+  &__card-description {
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: 20rem;
+  }
+
+  &__card-price {
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 20rem;
+  }
+
+  &__card-price-dollar {
+    color: #d17842;
+  }
+
+  &__card-price-count {
+    display: flex;
+    gap: 39rem;
+    margin-inline: center;
+  }
+}

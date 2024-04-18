@@ -3,10 +3,17 @@ import React from 'react'
 export const Home = () => {
   return (
     <>
-      <container className="home">
+      <div className="home">
         <div className='home__title'>Find the best
           coffee for you</div>
-        <input className='home__input' type="text" placeholder='Find Your Coffee...' />
+
+        <div className="home__field-search">
+          <img className='home__input-img' src="src\assets\icon\search-normal.svg" alt="search" />
+          <input className='home__input' type="text" placeholder='Find Your Coffee...' />
+        </div>
+
+
+
 
         <ul className="home__menu">
           <li><a className='home__menu-link' href="/">All</a></li>
@@ -18,70 +25,83 @@ export const Home = () => {
         </ul>
 
         <div className="coffee">
-          <div className="coffee__card cappucino">
+          <div className="coffee__card">
             <img className="coffee__card-photo" src="src/assets/img/cappucino1.png" alt="cappucino" />
             <div className="coffee__card-title">Cappuccino</div>
             <div className="coffee__card-description">With Steamed Milk</div>
-            <div className="coffee__card-price">$ 4.20</div>
-            <div className="coffee__card-btn">
-              <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+            <div className="coffee__card-price-count">
+              <div className="coffee__card-price"><span className='coffee__card-price-dollar'>$</span>4.20</div>
+              <div className="coffee__card-btn">
+                <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+              </div>
             </div>
           </div>
 
-          {/* <div className="home__coffee-cards cappucino2">
-            <img className='home__coffee-cards-photo' src="src/assets/img/cappucino2.png" alt="cappucino" />
-            <div className="home__coffee-cards-title">Cappuccino</div>
-            <div className="home__coffee-cards-description">With Foam</div>
-            <div className="home__coffee-cards-price">$ 4.20</div>
-            <div className="home__coffee-cards-btn">
-              <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+          <div className="coffee__card">
+            <img className="coffee__card-photo" src="src/assets/img/cappucino2.png" alt="cappucino2" />
+            <div className="coffee__card-title">Cappuccino</div>
+            <div className="coffee__card-description">With Foam</div>
+            <div className="coffee__card-price-count">
+              <div className="coffee__card-price"><span className='coffee__card-price-dollar'>$</span>4.20</div>
+              <div className="coffee__card-btn">
+                <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+              </div>
             </div>
           </div>
 
-          <div className="home__coffee-cards cappucino3">
-            <img className='home__coffee-cards-photo' src="src/assets/img/cappucino1.png" alt="cappucino" />
-            <div className="home__coffee-cards-title">Latte</div>
-            <div className="home__coffee-cards-description">With milk</div>
-            <div className="home__coffee-cards-price">$ 5.20</div>
-            <div className="home__coffee-cards-btn">
-              <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+          <div className="coffee__card">
+            <img className="coffee__card-photo" src="src/assets/img/cappucino1.png" alt="cappucino" />
+            <div className="coffee__card-title">Latte</div>
+            <div className="coffee__card-description">With Milk</div>
+            <div className="coffee__card-price-count">
+              <div className="coffee__card-price"><span className='coffee__card-price-dollar'>$</span>4.20</div>
+              <div className="coffee__card-btn">
+                <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
-       {/*  <div className="home__beans">
-          <div className="home__beans-cards robusta">
-            <img className='home_beans-cards-photo' src="src/assets/img/robusta.png" alt="robusta" />
-            <div className="home__beans-cards-title">Robusta Beans</div>
-            <div className="home__beans-cards-description">Medium Roasted</div>
-            <div className="home__beans-cards-price">$ 3.20</div>
-            <div className="home__beans-cards-btn">
-              <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+        <div className="beans">
+          <div className="beans__card">
+            <img className="beans__card-photo" src="src/assets/img/robusta.png" alt="robusta" />
+            <div className="beans__card-title">Robusta Beans</div>
+            <div className="beans__card-description">Medium Roasted</div>
+            <div className="beans__card-price-count">
+              <div className="beans__card-price"><span className='coffee__card-price-dollar'>$</span>4.20</div>
+              <div className="beans__card-btn">
+                <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+              </div>
             </div>
           </div>
 
-          <div className="home__beans-cards arabica">
-            <img className='home_beans-cards-photo' src="src/assets/img/cappucinobeans.png" alt="arabica" />
-            <div className="home__beans-cards-title">Arabica</div>
-            <div className="home__beans-cards-description">Medium Roasted</div>
-            <div className="home__beans-cards-price">$ 4.20</div>
-            <div className="home__beans-cards-btn">
-              <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+          <div className="beans__card">
+            <img className="beans__card-photo" src="src/assets/img/cappucinobeans.png" alt="capbeans" />
+            <div className="beans__card-title">Cappucino Beans</div>
+            <div className="beans__card-description">Medium Roasted</div>
+            <div className="beans__card-price-count">
+              <div className="beans__card-price"><span className='coffee__card-price-dollar'>$</span>4.20</div>
+              <div className="beans__card-btn">
+                <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+              </div>
             </div>
           </div>
 
-          <div className="home__beans-cards robusta2">
-            <img className='home_beans-cards-photo' src="src/assets/img/robusta.png" alt="robusta" />
-            <div className="home__beans-cards-title">Robusta Beans</div>
-            <div className="home__beans-cards-description">Medium Roasted</div>
-            <div className="home__beans-cards-price">$ 5.20</div>
-            <div className="home__beans-cards-btn">
-              <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+          <div className="beans__card">
+            <img className="beans__card-photo" src="src/assets/img/robusta.png" alt="robusta" />
+            <div className="beans__card-title">Robusta Beans</div>
+            <div className="beans__card-description">Medium Roasted</div>
+            <div className="beans__card-price-count">
+              <div className="beans__card-price"><span className='coffee__card-price-dollar'>$</span>4.20</div>
+              <div className="beans__card-btn">
+                <a href="/"><img src="src/assets/icon/plus.svg" alt="plus" /></a>
+              </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-      </container>
+
+      </div>
     </>
   )
 }
