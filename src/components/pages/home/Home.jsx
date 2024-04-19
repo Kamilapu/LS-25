@@ -1,4 +1,4 @@
-import React from 'react'
+import { Routes, Route, Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
@@ -61,9 +61,12 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
+        <div className="beans-title">
+          Coffee beans
+        </div>
         <div className="beans">
           <div className="beans__card">
+            <link to="" />
             <img className="beans__card-photo" src="src/assets/img/robusta.png" alt="robusta" />
             <div className="beans__card-title">Robusta Beans</div>
             <div className="beans__card-description">Medium Roasted</div>

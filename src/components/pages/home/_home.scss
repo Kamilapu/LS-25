@@ -4,6 +4,9 @@
     font-size: 28rem;
     font-weight: 600;
     line-height: 36rem;
+
+    max-width: 195rem;
+    margin-bottom: 28rem;
   }
 
   &__field-search {
@@ -17,7 +20,7 @@
 
     padding: 13rem 10rem 12rem 57rem;
 
-        &::placeholder {
+    &::placeholder {
       color: #52555a;
       font-size: 10rem;
       font-weight: 500;
@@ -36,6 +39,8 @@
     display: flex;
     align-items: center;
     gap: 19rem;
+    margin-top: 28rem;
+    margin-bottom: 36rem;
   }
 
   &__menu-link {
@@ -86,10 +91,21 @@
   }
 }
 
+.beans-title {
+  color: #fff;
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 20rem;
+
+  margin-top: 23rem;
+  margin-bottom: 19rem;
+}
+
 .beans {
   color: #fff;
   display: flex;
   gap: 22rem;
+  margin-bottom: 30rem;
 
   &__card {
     border-radius: 23rem;
